@@ -1,0 +1,20 @@
+$color-border-table-cell: #E1E5EB;
+
+table {
+	width: 100%;
+	font-size: 12px;
+	thead th {
+		text-align: center;
+		font-weight: bold;
+		color: #848EA1;
+		// font-family: 'Lato Bold', 'Helvetica', sans-serif;
+	}
+	thead th, tbody tr td, tfoot tr td {
+		vertical-align: middle;
+		padding: 5px;
+		border: 1px solid $color-border-table-cell;
+	}
+	tbody tr:hover td {
+		background-color: #FAFBFC;
+	}
+}

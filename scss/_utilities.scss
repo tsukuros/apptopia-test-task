@@ -1,0 +1,66 @@
+// floats
+.clearfix::after {
+ content: "";
+ display: table;
+ clear: both;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+// text alignment
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+// text transforms
+.text-uppercase {
+	text-transform: uppercase;
+}
+// text sizes (specific to this page)
+.text-xl {
+	font-size: 20px;
+}
+.text-md {
+	font-size: 14px;
+}
+.text-sm {
+	font-size: 13px;
+}
+.text-xs {
+	font-size: 12px;
+}
+// text colors
+.text-muted {
+	color: #848EA1;
+}
+// background colors
+.bg-muted {
+	background-color: #FAFBFC;
+}
+// displays
+.inline-block {
+	display: inline-block;
+}
+// border
+.border-r-0 {
+	border-right-color: transparent;
+}
+// image
+.img-rounded {
+	border-radius: 4px;
+}
+// positioning
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}

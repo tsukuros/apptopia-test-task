@@ -1,0 +1,23 @@
+{
+  "1":{
+    "name":"North America",
+    "countries":["US","CA","MX"]},
+  "2":{
+    "name":"Asia",
+    "countries":["CN","JP","KR","HK","IN","TW"]},
+  "3":{
+    "name":"Western Europe",
+    "countries":["FR","IT","ES","DE","GB","NL","SE"]},
+  "4":{
+    "name":"Eastern Europe",
+    "countries":["RU","NO","CH","GR","PL"]},
+  "5":{
+    "name":"Middle East",
+    "countries":["IL","TR","AE","SA","EG"]},
+  "6":{
+    "name":"Latin America",
+    "countries":["BR","CL","CO","AR","VE"]},
+  "7":{
+    "name":"South Pacific",
+    "countries":["AU","NZ","ID","MY","TH","PH"]}
+}

@@ -1,0 +1,107 @@
+@import "normalize";
+@import "fonts";
+@import "utilities";
+@import "buttons";
+@import "tables";
+@import "inputs";
+@import "dropdown";
+@import "mixins/text-truncate";
+@import "mixins/image-2x";
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 3rem;
+	background-color: #F2F4F7;
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
+	color: #555f77;
+}
+.page-container-card {
+	border-radius: 4px;
+	background: #fff;
+	margin: 2rem auto;
+	padding: 3rem;
+	box-shadow: 0 5px 15px 0 rgba(0,0,0,0.25);
+	max-width: 1140px;
+}
+.delete-watchlist-link {
+	font-weight: normal;
+	&:hover {
+		color: #DD3D2E;
+		cursor: pointer;
+	}
+}
+// filter menus styles
+.filter-menus-section {
+	padding: 1rem;
+	margin-bottom: 1rem;
+	.filter-menu {
+		margin-right: 1rem;
+	}
+	.filter-menu-label {
+		margin-top: 0;
+	}
+}
+// table-related styles
+.i-download {
+	background: url(../assets/icon-download.png) center center no-repeat;
+	@include image-2x("../assets/icon-download@2x.png", 14px, 12px);
+	width: 14px;
+	height: 12px;
+	display: inline-block;
+	margin-right: .5rem;
+}
+.i-dollar {
+	background: url(../assets/icon-dollar.png) center center no-repeat;
+	@include image-2x("../assets/icon-dollar@2x.png", 8px, 13px);
+	width: 8px;
+	height: 13px;
+	display: inline-block;
+	margin-right: .5rem;
+}
+.app-platform-icon {
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.app-name-container {
+	margin-left: 37px;
+	width: calc(100% - 15px);
+	a {
+		display: inline-block;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.app-name {
+		color: #0094FF;
+		max-width: 180px;
+		min-width: 100px;
+		@include text-truncate();
+	}
+	.app-company {
+		color: #ACB4C2;
+	}
+}
+.progress {
+	background-color: #E9ECF5;
+	margin-top: 2px;
+	.progress-bar {
+		height: 5px;
+		background-color: #0094FF;
+		&.revenue-fill {
+			background-color: #6AB917;
+		}
+	}
+}
+.fa-times-circle:hover {
+	color: #555F77;
+}
+.selected-countries-menu {
+	max-height: 300px;
+	overflow: scroll;
+}

@@ -1,0 +1,40 @@
+//
+// Base styles
+//
+
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #CED2DB;
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: #fff;
+  &:hover {
+    border-color: #ACB4C2;
+    color: #555F77;
+    .fa-caret-down {
+      color: #848EA1;
+    }
+  }
+  &.btn-dropdown {
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    text-align: left;
+    line-height: 27px;
+    position: relative;
+    min-width: 140px;
+  }
+  .fa-caret-down {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: .5rem;
+    transform: translateY(-50%);
+    color: #ACB4C2;
+  }
+}
