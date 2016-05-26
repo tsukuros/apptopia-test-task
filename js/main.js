@@ -8,7 +8,7 @@
 		nMinSelected = 2,
 		nMaxSelected = 15;
 
-	$.get('/data/continents.json')
+	$.get('data/continents.json')
 		.done(function (res) {
 			regions = res;
 			// regions['0'] = { 
